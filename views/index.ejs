@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Filter Students</title>
+</head>
+<body>
+  <h1>Filter Students</h1>
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name">
+
+  <label for="grade">Grade:</label>
+  <select id="grade" name="grade">
+    <option value="All">Any</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
+  </select>
+
+  <label for="minGpa">Min GPA:</label>
+  <input type="number" id="minGpa" name="minGpa" step="0.1" min="0" max="4" value="0.0">
+  <label for="maxGpa">Max GPA:</label>
+  <input type="number" id="maxGpa" name="maxGpa" step="0.1" min="0" max="4" value="4.0">
+
+  <label for="cool">Cool/Not Cool:</label>
+  <select id="cool" name="cool">
+    <option value="All">Any</option>
+    <option value=true>Cool</option>
+    <option value=false>Not Cool</option>
+  </select>
+
+  <br><br>
+  
+  <h2>Students</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Grade</th>
+        <th>GPA</th>
+        <th>Cool?</th>
+      </tr>
+    </thead>
+    <tbody id='tableBody'>
+
+    </tbody>
+  </table>
+  
+  <script src="script.js"></script>
+</body>
+</html>
